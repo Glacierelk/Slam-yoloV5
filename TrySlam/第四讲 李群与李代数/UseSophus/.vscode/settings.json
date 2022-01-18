@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.default.browse.path": [
+        "\"/usr/include/eigen3\"",
+        "\"/home/glacier-elk/Desktop/slam\""
+    ],
+    "C_Cpp.default.cppStandard": "c++11"
+}

@@ -1,0 +1,1 @@
+/bin/clang++-10  -O3 -DNDEBUG  -rdynamic CMakeFiles/eigen.dir/eigen.o  -o eigen 

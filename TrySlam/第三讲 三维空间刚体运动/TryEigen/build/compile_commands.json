@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/glacier-elk/Desktop/slam/TryEigen/build",
+  "command": "/bin/clang++-10   -I/usr/include/eigen3 -I\"/**\"  -O3 -DNDEBUG   -o CMakeFiles/eigen.dir/eigen.o -c /home/glacier-elk/Desktop/slam/TryEigen/eigen.cpp",
+  "file": "/home/glacier-elk/Desktop/slam/TryEigen/eigen.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/bin/clang++-10  -g  -rdynamic CMakeFiles/useSophus.dir/useSophus.o  -o useSophus 

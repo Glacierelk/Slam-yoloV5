@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/glacier-elk/Desktop/slam/EigenGeometricModule/build",
+  "command": "/bin/clang++-10   -I/usr/include/eigen3 -I\"/**\"  -g   -o CMakeFiles/eigenGeometricModule.dir/eigenGeometric.o -c /home/glacier-elk/Desktop/slam/EigenGeometricModule/eigenGeometric.cpp",
+  "file": "/home/glacier-elk/Desktop/slam/EigenGeometricModule/eigenGeometric.cpp"
+}
+]

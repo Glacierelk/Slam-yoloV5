@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/glacier-elk/Desktop/slam/第四讲 李群与李代数/UseSophus/build",
+  "command": "/bin/clang++-10  -DSOPHUS_USE_BASIC_LOGGING=1 -isystem /usr/include/eigen3 -isystem /home/glacier-elk/Desktop/slam/Sophus-master  -g   -o CMakeFiles/useSophus.dir/useSophus.o -c \"/home/glacier-elk/Desktop/slam/第四讲 李群与李代数/UseSophus/useSophus.cpp\"",
+  "file": "/home/glacier-elk/Desktop/slam/第四讲 李群与李代数/UseSophus/useSophus.cpp"
+}
+]
