@@ -1,2 +1,2 @@
 # Slam-yoloV5
-Freshman year project.
+This is a repository to storage my freshman year project.
