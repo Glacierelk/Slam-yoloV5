@@ -1,0 +1,339 @@
+***** ScaViSLAM *****
+
+This is a general and scalable framework for visual SLAM. It employs 
+"Double Window Optimization" (DWO) as described in our ICCV paper:
+
+H. Strasdat, A.J. Davison, J.M.M. Montiel, and K. Konolige
+"Double Window Optimisation for Constant Time Visual SLAM"
+Proceedings of the IEEE International Conference on Computer Vision, 2011.
+
+Check out the related videos: 
+http://youtu.be/90Rw3qDuWrw
+http://youtu.be/89CNVQ5azsc
+
+At the moment it supports calibrated stereo rigs, and RGB-D cameras.
+Monocular SLAM is NOT supported (yet).
+
+*** NOTES AND WARNINGS / READ FIRST ***
+
+This library is a research-level software which is in development. 
+This is NOT a release version. For sure, features will be added, 
+bugs will be fixed and the API will change in the future.
+
+Even thought the software is in principal designed to run cross-platform,
+it most likely will only work on a recent 64-bit linux (without the need
+of adaptations...). It was tested on Ubuntu 11.10 - 64 bit.
+
+(Note there might be problems on 32bit linux related to Eigen3.
+ http://eigen.tuxfamily.org/dox/TopicUnalignedArrayAssert.html.
+ I followed the guide describe on this website, but I have not tested it on 
+ 32-bit linux yet. Any bug reports/patches are welcome!)
+
+WARNING: There is a bug concerning Eigen3.0 and gcc/g++-4.4. Make sure you install Eigen3.1 as explained below. 
+(see: http://listengine.tuxfamily.org/lists.tuxfamily.org/eigen/2011/04/msg00013.html
+&  http://comments.gmane.org/gmane.comp.lib.eigen/2046)
+Detailed instructions are listed below.
+
+
+*** INSTALLATION ***
+
+First download sample image sequences. This will take a while, so do it first.
+(These are already rectified stereo images from the New College dataset: 
+http://www.robots.ox.ac.uk/NewCollegeData/)
+
+>>
+cd MY_DATA_DIRECTORY
+mkdir newcollege
+cd newcollege
+wget -nH --cut-dirs=4 -r -l2 --no-parent -A "*.pnm" http://pub1.willowgarage.com/~konolige/data/NewCollege/FullData/StereoImages_1225720041.455302_to_1225720118.251935 
+wget -nH --cut-dirs=4 -r -l2 --no-parent -A "*.pnm" http://pub1.willowgarage.com/~konolige/data/NewCollege/FullData/StereoImages_1225720118.301927_to_1225720193.248630
+wget -nH --cut-dirs=4 -r -l2 --no-parent -A "*.pnm" http://pub1.willowgarage.com/~konolige/data/NewCollege/FullData/StereoImages_1225720193.298630_to_1225720268.945303
+<<
+
+If you want to download a larger portion of the data, see the index at
+
+http://pub1.willowgarage.com/~konolige/data/NewCollege/FullData/
+
+Before we start with the installation, we need to perform some preparations.
+ScaViSLAM comes with GPU support. Indeed, GPU support is the default option.
+(Each GPU method has a CPU equivalent. However those are not tested very much).
+Thus, there is an optional dependency on CUDA 4.1 or higher.
+
+Next, install dependencies:
+
+>>
+sudo apt-get install libeigen3-dev libsuitesparse-dev freeglut3-dev libglu-dev libglew-dev libboost-all-dev
+<<
+
+Important: Make sure libsuitesparse-dev is installed before you install g2o.
+
+(If you use an older linux version, you might have to install eigen3 manually
+from: http://eigen.tuxfamily.org)
+
+
+In order to avoid version conflicts, I would very much recommend to install all  
+libraries locally in your home directory and not system wide. So create 
+a sub-directory in your home, e.g. 
+
+>>
+mkdir $HOME/svslocal 
+<<
+
+Now checkout/clone the ScaViSLAM repository.
+
+>>
+cd MY_SOFTWARE_DIRECTORY
+git clone git://github.com/strasdat/ScaViSLAM.git
+<<
+
+Now, enter the project directory
+
+>>
+cd ScaViSLAM
+<<
+
+and then create and enter the directory for EXTERNAL libraries:
+
+>>
+mkdir EXTERNAL
+cd EXTERNAL
+<<
+
+Check out and install g2o:
+
+>>
+git clone git://github.com/strasdat/g2o.git
+cd g2o
+mkdir svs_build
+cd svs_build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$HOME/svslocal
+make -j4
+make install
+cd ../..
+<<
+
+Download and install opencv (version 2.4.2) inside EXTERNAL:
+
+>>
+wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.2/OpenCV-2.4.2.tar.bz2
+tar xvf OpenCV-2.4.2.tar.bz2
+cd OpenCV-2.4.2
+mkdir svs_build
+cd svs_build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$HOME/svslocal
+make -j4
+make install
+cd ../..
+<<
+
+Clone and install Pangolin inside EXTERNAL
+
+>>
+git  clone git://github.com/strasdat/Pangolin.git
+cd Pangolin
+mkdir svs_build
+cd svs_build
+cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=$HOME/svslocal
+make -j4
+make install
+cd ../..
+<<
+
+Clone and install Sophus in folder EXTERNAL
+
+>>
+git clone git://github.com/strasdat/Sophus.git
+cd Sophus
+git checkout a621ff
+mkdir svs_build
+cd svs_build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=$HOME/svslocal
+make -j4
+make install
+cd ../..
+<<
+
+Install VisionTools in folder EXTERNAL
+
+>>
+git clone git://github.com/strasdat/VisionTools.git
+cd VisionTools
+mkdir svs_build
+cd svs_build
+cmake .. -DCMAKE_PREFIX_PATH:PATH=$HOME/svslocal -DCMAKE_INSTALL_PREFIX:PATH=$HOME/svslocal
+make -j4
+make install
+<<
+
+Move to main project folder "ScaViSLAM" and install ScaViSLAM:
+
+>>
+cd ../../../
+mkdir svs_build
+cd svs_build
+cmake .. -DCMAKE_PREFIX_PATH:PATH=$HOME/svslocal
+make -j4
+<<
+
+In case you would like to compile ScaViSLAM WITHOUT CUDA support, 
+turn CUDA_SUPPORT to OFF in the CMakeLists.txt file.
+
+Make sure the "New College" data set is downloaded completely.
+Then add a sym-link inside "ScaViSLAM/data":
+
+>>
+cd ../data
+ln -s PATH_TO_MY_DATA_DIRECTORY/newcollege/(subdirectory) newcollege
+<<
+
+Where subdirectory contains the image sequence directory.  
+If you want to run a longer sequence, consolidate the files into a
+single directory.
+
+Run ScaViSLAM on new college image sequence:
+>>
+cd ../svs_build
+./stereo_slam ../data/newcollege.cfg
+<<
+
+
+*** HOW TO USE A RGB-D CAMERA? ***
+
+First note, that the use of RGB-D cameras in ScaViSLAM is not very well tested and
+very experimental! (ScaViSLAM is well tested in stereo-camera mode on the New College
+seqeunce.)
+
+At the moment, only RGB-D cameras following the PrimeSense reference design
+(e.g. Ausus Xtion PRO LIVE) are supported.
+First, you need to install PCL (which includes OpenNI):
+
+>>
+sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
+sudo apt-get update
+sudo apt-get install libpcl-all
+<<
+
+Reinstall ScaViSLAM with PCL support:
+
+>>
+cd MY_SOFTWARE_DIRECTORY
+cd /ScaViSLAM/
+mkdir svs_build_with_pcl
+cd svs_build_with_pcl
+cmake  -DPCL_SUPPORT=ON ..
+make -j8
+>>
+
+Try out ScaViSLAM with your RGB-D camera life:
+
+>>
+./stereo_slam ../data/rgbd-Live.cfg
+<<
+
+Dump RGB-D data to the hard disk (to ../data/out; create this directory or 
+set an appropriate sym-link):
+
+>>
+./dump_rgbd ../data/rgbd_live.cfg 
+<<
+
+Finally, you can process the saved image sequence by adapting the configuration 
+files "../data/rgbd_example.cfg". Basically, you have to point
+"framepipe.path_str" to the saved images.
+
+
+*** WHAT ABOUT LIVE STEREO CAMERAS? ***
+
+This is more tricky since we need to make sure that the image stream is 
+rectified. Some adaptation in the code might be necessary...
+
+
+*** HOW TO CONTRIBUTE? ***
+
+You are welcome to report bugs and request features at: 
+https://github.com/strasdat/ScaViSLAM/issues.
+To do so click on "New Issue", fill out the form and select the appropriate
+label ("Bug" or "Feature Request").
+Please feel free to also browse through the "ToDo" and "Future Features" 
+issues, so you can find out which features are planned to be included 
+soon ("ToDo") or eventually ("Future Features").
+
+The best and easiest  way to contribute is to use the "github" way:
+ - Register at github (for free).
+ - Got to: "https://github.com/strasdat/ScaViSLAM"
+ - Click on "Fork" to create a Fork of ScaViSLAM.
+ - Commit and push changes into your Fork.
+ - Click on "Pull Request" in order to ask me whether I would like to merge
+   the changes into the ScaViSLAM master branch.
+
+(If it is only a small change/bug fix, you could also simply send me
+patch etc.)
+
+In order to maximize the likelihood that I will accept your pull request,
+please read carefully through the coding style guide:
+
+
+*** CODING STYLE GUIDE ***
+
+The coding style is largely influenced by the google c++ coding style guide:
+http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
+(Reading the document is insightful in any case, even if you don't agree with
+"google's" decision!)
+
+I am especially strict about the following rules:
+
+ - "When defining a function, parameter order is: inputs, then outputs."
+ - "All parameters passed by reference must be labeled const."
+   Thus, the following is NOT okay:
+   'void method(const Vector2d & in, Vector2d & out)'
+   Use this instead:
+   'void method(const Vector2d & in, Vector2d * out)'
+ - "Of the built-in C++ integer types, the only one used is int. If a program 
+    needs a variable of a different size, use a precise-width integer type 
+    from <stdint.h>, such as int16_t."
+ - "Use 0 for integers, 0.0 for reals, NULL for pointers, and '\0' for chars."
+ - "We do not use C++ exceptions."
+ - "Use the specified order of declarations within a class: public: before 
+    private:, methods before data members (variables), etc." 
+ - "Use a struct only for passive objects that carry data; everything else 
+    is a class."
+ - "Prefer small and focused functions."
+ - "Use only approved libraries and language extensions from C++11 (formerly 
+    known as C++0x). Currently, none are approved."
+ - "We do not allow default function parameters, except in a few uncommon 
+    situations..."
+ - "Use prefix form (++i) of the increment and decrement operators with 
+    iterators and other template objects."
+ - "We strongly recommend that you use const whenever it makes sense to do so."
+
+At some points, I deviate from the C++ coding style guide:
+ - 'Using namespace X;' is okay, but only within(!) the ScaViSLAM namespace.
+   Never pollute the general namespace '::'. 
+   (However, do not use "using namespace cv" or 'using namespace pangolin'.) 
+ - I use 'boost::thread'.
+ - In rare cases, it is okay to have public class members.
+ - It is okay to use streams such as "cout", "cerr", "stringstream". (But 
+   usually, I'd like to use "cerr" and friends only for debugging purposes...)
+
+I also deviate slightly from google's formatting. Therefore the following rule
+is the most important one:
+
+"Use common sense and BE CONSISTENT.
+
+If you are editing code, take a few minutes to look at the code around you and 
+determine its style. If they use spaces around their if clauses, you should, 
+too. If their comments have little boxes of stars around them, make your 
+comments have little boxes of stars around them too." 
+
+(All cites in "quotation marks" are from the google coding style guide.)
+
+If you would like to use automatic indentation, I recommend you to use
+the QtCreator (2.4.0 or newer) for code editing. You can import the ScaViSLAM
+code style using "coding_style.xml":
+ * Open "ScaViSLAM" project in QtCreator.
+ * Click on "Projects". (Select "ScaViSLAM" tap in case several projects are 
+   open.)
+ * Click on "Editor Settings". 
+ * Select "Editor Settings: Custom"
+ * Click on "Coding Style Settings-->Import..." and select "coding_style.xml".
+
