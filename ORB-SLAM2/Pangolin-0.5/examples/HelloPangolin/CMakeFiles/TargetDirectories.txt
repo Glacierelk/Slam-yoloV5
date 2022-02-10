@@ -1,0 +1,5 @@
+/home/glacier-elk/Downloads/Pangolin-0.5/examples/HelloPangolin/CMakeFiles/rebuild_cache.dir
+/home/glacier-elk/Downloads/Pangolin-0.5/examples/HelloPangolin/CMakeFiles/edit_cache.dir
+/home/glacier-elk/Downloads/Pangolin-0.5/examples/HelloPangolin/SharedMemoryVideoWriter/CMakeFiles/rebuild_cache.dir
+/home/glacier-elk/Downloads/Pangolin-0.5/examples/HelloPangolin/SharedMemoryVideoWriter/CMakeFiles/edit_cache.dir
+/home/glacier-elk/Downloads/Pangolin-0.5/examples/HelloPangolin/SharedMemoryVideoWriter/CMakeFiles/SharedMemoryVideoWriter.dir

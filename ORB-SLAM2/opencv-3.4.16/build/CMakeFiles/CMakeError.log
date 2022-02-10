@@ -1,0 +1,409 @@
+Build output check failed:
+    Regex: 'argument .* is not valid'
+    Output line: 'cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type  -Werror=non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24d9d/fast && /usr/bin/make -f CMakeFiles/cmTC_24d9d.dir/build.make CMakeFiles/cmTC_24d9d.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_24d9d.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type  -Werror=non-virtual-dtor -o CMakeFiles/cmTC_24d9d.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_24d9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24d9d.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_24d9d.dir/src.c.o  -o cmTC_24d9d 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b1af8/fast && /usr/bin/make -f CMakeFiles/cmTC_b1af8.dir/build.make CMakeFiles/cmTC_b1af8.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_b1af8.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes -o CMakeFiles/cmTC_b1af8.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_b1af8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1af8.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_b1af8.dir/src.cxx.o  -o cmTC_b1af8 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a4f5d/fast && /usr/bin/make -f CMakeFiles/cmTC_a4f5d.dir/build.make CMakeFiles/cmTC_a4f5d.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_a4f5d.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes -o CMakeFiles/cmTC_a4f5d.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_a4f5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4f5d.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_a4f5d.dir/src.cxx.o  -o cmTC_a4f5d 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4ff8/fast && /usr/bin/make -f CMakeFiles/cmTC_b4ff8.dir/build.make CMakeFiles/cmTC_b4ff8.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b4ff8.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo -o CMakeFiles/cmTC_b4ff8.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_b4ff8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4ff8.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_b4ff8.dir/src.c.o  -o cmTC_b4ff8 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b5c5e/fast && /usr/bin/make -f CMakeFiles/cmTC_b5c5e.dir/build.make CMakeFiles/cmTC_b5c5e.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b5c5e.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override -o CMakeFiles/cmTC_b5c5e.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_b5c5e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5c5e.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_b5c5e.dir/src.c.o  -o cmTC_b5c5e 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d415/fast && /usr/bin/make -f CMakeFiles/cmTC_7d415.dir/build.make CMakeFiles/cmTC_7d415.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7d415.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_7d415.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_7d415
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d415.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_7d415.dir/src.c.o  -o cmTC_7d415 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0fd8/fast && /usr/bin/make -f CMakeFiles/cmTC_b0fd8.dir/build.make CMakeFiles/cmTC_b0fd8.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_b0fd8.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_b0fd8.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking CXX executable cmTC_b0fd8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0fd8.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_b0fd8.dir/src.cxx.o  -o cmTC_b0fd8 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3c0d1/fast && /usr/bin/make -f CMakeFiles/cmTC_3c0d1.dir/build.make CMakeFiles/cmTC_3c0d1.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3c0d1.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_3c0d1.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking C executable cmTC_3c0d1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c0d1.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_3c0d1.dir/src.c.o  -o cmTC_3c0d1 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_92b9d/fast && /usr/bin/make -f CMakeFiles/cmTC_92b9d.dir/build.make CMakeFiles/cmTC_92b9d.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_92b9d.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_92b9d.dir/src.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_92b9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92b9d.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    -rdynamic CMakeFiles/cmTC_92b9d.dir/src.c.o  -o cmTC_92b9d 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-inconsistent-missing-override'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_945fe/fast && /usr/bin/make -f CMakeFiles/cmTC_945fe.dir/build.make CMakeFiles/cmTC_945fe.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_945fe.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-inconsistent-missing-override -o CMakeFiles/cmTC_945fe.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’
+Linking CXX executable cmTC_945fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_945fe.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_945fe.dir/src.cxx.o  -o cmTC_945fe 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_afadf/fast && /usr/bin/make -f CMakeFiles/cmTC_afadf.dir/build.make CMakeFiles/cmTC_afadf.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_afadf.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-missing-prototypes -o CMakeFiles/cmTC_afadf.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_afadf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afadf.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_afadf.dir/src.cxx.o  -o cmTC_afadf 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10b04/fast && /usr/bin/make -f CMakeFiles/cmTC_10b04.dir/build.make CMakeFiles/cmTC_10b04.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_10b04.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_10b04.dir/CheckIncludeFile.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: linux/videodev.h: 没有那个文件或目录
+    1 | #include <linux/videodev.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_10b04.dir/build.make:66：CMakeFiles/cmTC_10b04.dir/CheckIncludeFile.c.o] 错误 1
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_10b04/fast] 错误 2
+
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e840/fast && /usr/bin/make -f CMakeFiles/cmTC_5e840.dir/build.make CMakeFiles/cmTC_5e840.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5e840.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_5e840.dir/CheckIncludeFile.c.o   -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/videoio.h: 没有那个文件或目录
+    1 | #include <sys/videoio.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_5e840.dir/build.make:66：CMakeFiles/cmTC_5e840.dir/CheckIncludeFile.c.o] 错误 1
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_5e840/fast] 错误 2
+
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0c70e/fast && /usr/bin/make -f CMakeFiles/cmTC_0c70e.dir/build.make CMakeFiles/cmTC_0c70e.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_0c70e.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-tautological-undefined-compare -o CMakeFiles/cmTC_0c70e.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’
+Linking CXX executable cmTC_0c70e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c70e.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_0c70e.dir/src.cxx.o  -o cmTC_0c70e 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86394/fast && /usr/bin/make -f CMakeFiles/cmTC_86394.dir/build.make CMakeFiles/cmTC_86394.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_86394.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-shorten-64-to-32 -o CMakeFiles/cmTC_86394.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’
+Linking CXX executable cmTC_86394
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86394.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_86394.dir/src.cxx.o  -o cmTC_86394 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2b1c/fast && /usr/bin/make -f CMakeFiles/cmTC_b2b1c.dir/build.make CMakeFiles/cmTC_b2b1c.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_b2b1c.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-enum-compare-switch -o CMakeFiles/cmTC_b2b1c.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’
+Linking CXX executable cmTC_b2b1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2b1c.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_b2b1c.dir/src.cxx.o  -o cmTC_b2b1c 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-unused-private-field’'
+Compilation failed:
+    source file: '/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-unused-private-field'
+===== BUILD LOG =====
+Change Dir: /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d4ecb/fast && /usr/bin/make -f CMakeFiles/cmTC_d4ecb.dir/build.make CMakeFiles/cmTC_d4ecb.dir/build
+make[1]: 进入目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_d4ecb.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-function -Wno-deprecated-declarations -Wno-overloaded-virtual  -O3 -DNDEBUG  -DNDEBUG -fPIE    -Wno-unused-private-field -o CMakeFiles/cmTC_d4ecb.dir/src.cxx.o -c /home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx
+/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: warning: unrecognized command line option ‘-Wno-unused-private-field’
+Linking CXX executable cmTC_d4ecb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4ecb.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-function -Wno-deprecated-declarations -Wno-overloaded-virtual  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_d4ecb.dir/src.cxx.o  -o cmTC_d4ecb 
+make[1]: 离开目录“/home/glacier-elk/Downloads/opencv-3.4.16/build/CMakeFiles/CMakeTmp”
+
+
+===== END =====
+

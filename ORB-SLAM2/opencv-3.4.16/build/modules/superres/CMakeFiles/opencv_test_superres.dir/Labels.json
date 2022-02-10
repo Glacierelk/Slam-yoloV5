@@ -1,0 +1,42 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/glacier-elk/Downloads/opencv-3.4.16/modules/superres/test/test_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "/home/glacier-elk/Downloads/opencv-3.4.16/modules/superres/test/test_superres.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "/home/glacier-elk/Downloads/opencv-3.4.16/modules/superres/test/test_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_superres",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_superres"
+	}
+}

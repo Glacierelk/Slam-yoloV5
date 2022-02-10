@@ -1,0 +1,79 @@
+# Target labels
+ Main
+ opencv_videoio
+ Module
+# Source files and their labels
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio/cap_ios.h
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio/container_avi.private.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio/registry.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio/videoio.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/include/opencv2/videoio/videoio_c.h
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/videoio_registry.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/videoio_c.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_images.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_mjpeg_encoder.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_mjpeg_decoder.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/container_avi.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_dc1394_v2.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_v4l.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_ffmpeg.cpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/precomp.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/modules/videoio/src/cap_ffmpeg_impl.hpp
+ Main
+ opencv_videoio
+ Module
+/home/glacier-elk/Downloads/opencv-3.4.16/build/cvconfig.h
+/home/glacier-elk/Downloads/opencv-3.4.16/build/opencv2/opencv_modules.hpp
